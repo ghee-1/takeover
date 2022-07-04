@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^frmez.org [NC]
+RewriteRule ^(.*)$ http://www.frmez.org/$1 [L,R=301]
+
+
+#Redirect 404
+
+RewriteEngine On
+ErrorDocument 404 /404.php
